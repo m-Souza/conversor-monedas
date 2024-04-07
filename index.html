@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Conversor de monedas</h1>
+        </header>
+        
+        <section>
+            <input id="inputConvertir" type="text">
+            <select name="currency-selector" id="currency-selector">
+                <option value="dolar">Dólares americanos (USD)</option>
+                <option value="euro">Euros (EUR)</option>
+                <option value="uf">Unidad de fomento (UF)</option>
+            </select>
+            <button id="buscar">Buscar</button>
+            <p id="campoResultadoCompleto">Resultado: $<span id="resultado"></span></p>
+            <div id="cSection"></div>
+        </section>
+        
+        <section id="graph">
+            <h3>Últimas 10 cotaciones</h3>
+            <div class="grafica">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
